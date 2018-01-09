@@ -89,7 +89,15 @@ CREATE TABLE  livre_auteurs(
   )
 ENGINE = INNODB;
 
+-- Je trouve que ce serait bien d'aboir une table pour enregitrer des résumés et avoir une recherche en fulltext que ne permet pas INNODB
 
+CREATE TABLE resume_livres (
+  id_livre INT UNSIGNED NOT NULL,             -- pas d'auto increment. Ce sera le même identifiant que dans la fiche livre
+  resume TEXT,
+  PRIMARY KEY pk_resume(id_livre),
+  FULLTEXT INDEX ind_resume (resume)
+  )
+ENGINE = MYISAM;
 
 -- fonction pour mettre une majuscule en début d'un mot (pour les noms propre et les noms de genre)
 

@@ -1,0 +1,14 @@
+JAVA:
+
+Création d'un pattern DAO, soit:
+
+- 1 classe abstraite DAO
+Autant de classes DAO descendant de cette classe abstraite que de tables de la base de données
+Une classe DAO factory
+Une classe de connexion
+
+Autant de classe métier, objet java correspondant aux tables de la base de données
+
+Une classe IHM avec interface à onglet, chaque onglet donnant acces à un des aspects de la base (auteurs, livres, genres, etc.)
+
+A développer sous forme de tâches:

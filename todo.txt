@@ -12,3 +12,10 @@ Autant de classe métier, objet java correspondant aux tables de la base de donn
 Une classe IHM avec interface à onglet, chaque onglet donnant acces à un des aspects de la base (auteurs, livres, genres, etc.)
 
 A développer sous forme de tâches:
+
+
+SQL: 
+
+Création des triggers, des vues et des procédures stockées.
+
+A développer sous forme de tâches:

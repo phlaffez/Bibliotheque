@@ -101,4 +101,9 @@ ENGINE = MYISAM;
 
 -- fonction pour mettre une majuscule en début d'un mot (pour les noms propre et les noms de genre)
 
--- Triggers pour homogénéiser les noms dans les bases de données 																												
+-- Triggers pour homogénéiser les noms dans les bases de données
+
+-- J'ajoute des champs, car comme ça ce sera fait, et ça change pas grand choseà la charge de travail
+ALTER TABLE auteurs ADD COLUMN  anneee_naiss INT;
+ALTER TABLE auteurs ADD COLUMN  anneee_deces INT;
+ALTER TABLE auteurs ADD COLUMN  infos TEXT; 																												
